@@ -1,0 +1,32 @@
+  <single-spa-router>
+      <!-- <application name="@kulian/navbar"></application> -->
+      <div id="navbar">
+        <nav id="global-nav" {{startRouting}}>
+          <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/poc-react">react</a></li>
+          <li><a href="/poc-angular">angular</a></li>
+          <li><a href="/poc-angular-ms2">angular teste</a></li>
+          </ul>
+       </nav>
+      </div>
+    <main>
+      <route default>
+      <p class="mfe-info">
+      Testes de microfront.
+      </p>
+      </route>
+      <route path="poc-react">
+      <application name="@kulian/poc-react"></application>
+      </route>
+      <route path="poc-angular">
+      <application name="@kulian/poc-angular"></application>
+      </route>
+      <route path="poc-angular-ms2">
+        <application name="@kulian/poc-angular-ms2"></application>
+        </route>
+    </main>
+    <footer>
+      <p>teste footer</p>
+    </footer>
+  </single-spa-router>
